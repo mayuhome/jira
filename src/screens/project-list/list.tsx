@@ -1,3 +1,5 @@
+import { User } from './search-panel'
+
 /*
  * @Author: Ma Jade
  * @Date: 2022-04-04 17:19:26
@@ -5,8 +7,18 @@
  * @LastEditors: Ma Jade
  * @FilePath: \jira\src\screens\project-list\list.jsx
  */
-
-export const List = ({users,list}) => {
+interface Project {
+    id: string,
+    name: string,
+    personId: string,
+    pin: boolean,
+    organization: string
+  }
+  interface ListProps {
+    list: Project[],
+    users: User[]
+  }
+export const List = ({users,list}:ListProps) => {
     return <table>
         <thead>
             <tr>

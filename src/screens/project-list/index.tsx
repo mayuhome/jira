@@ -1,9 +1,9 @@
 /*
  * @Author: Ma Jade
  * @Date: 2022-04-04 17:17:09
- * @LastEditTime: 2022-04-04 18:49:08
+ * @LastEditTime: 2022-04-05 00:19:12
  * @LastEditors: Ma Jade
- * @FilePath: \jira\src\screens\project-list\index.jsx
+ * @FilePath: \jira\src\screens\project-list\index.tsx
  */
 import { List } from './list'
 import { SearchPanel } from './search-panel'
@@ -23,7 +23,7 @@ export const ProjectListScreen = () => {
         personId: ''
     });
 
-    const debouncedParam = useDebounce(param, 2000);
+    const debouncedParam = useDebounce(param, 500);
     const [list, setList] = useState([]);
 
     useEffect(() => {
