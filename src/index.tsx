@@ -1,3 +1,10 @@
+/*
+ * @Author: Ma Jade
+ * @Date: 2022-04-03 23:44:14
+ * @LastEditTime: 2022-04-04 18:19:51
+ * @LastEditors: Ma Jade
+ * @FilePath: \jira\src\index.tsx
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
