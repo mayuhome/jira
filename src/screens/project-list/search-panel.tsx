@@ -5,13 +5,9 @@
  * @LastEditors: Ma Jade
  * @FilePath: \jira\src\screens\project-list\search-panel.jsx
  */
-export interface User {
-    id: string,
-    name: string,
-    personId: string,
-    organization: string,
-    created: string
-  }
+
+import { User } from '../../models/interface';
+
   interface SearchPanelProps {
     users: User[],
     param: {

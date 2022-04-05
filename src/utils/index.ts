@@ -5,6 +5,7 @@
  * @LastEditors: Ma Jade
  * @FilePath: \jira\src\utils\index.ts
  */
+import React from 'react';
 import { useEffect, useState } from 'react';
 
 export const isFalsy = (value: unknown) => value === 0 ? false:!!value;

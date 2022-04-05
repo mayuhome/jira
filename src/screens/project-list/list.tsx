@@ -1,4 +1,4 @@
-import { User } from './search-panel'
+import { Project, User } from '../../models/interface'
 
 /*
  * @Author: Ma Jade
@@ -7,13 +7,7 @@ import { User } from './search-panel'
  * @LastEditors: Ma Jade
  * @FilePath: \jira\src\screens\project-list\list.jsx
  */
-interface Project {
-    id: string,
-    name: string,
-    personId: string,
-    pin: boolean,
-    organization: string
-  }
+
   interface ListProps {
     list: Project[],
     users: User[]
